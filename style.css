@@ -1,0 +1,44 @@
+body{
+    background-image: url(fondo3.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(216, 173, 255);
+    height: 70px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+a{
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #060122;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #060122;
+    transition: width 0.3s ease;
+}
+a:hover:before{
+width: 100%;
+}
